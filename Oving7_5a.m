@@ -5,7 +5,7 @@ b = [0; 5; 0; 6; -2; 6];
 omega = linspace(0,2);
 rhoB = zeros(1,100);
 for i=1:100
-    rhoB = rhoSOR(A, omega(i));
+    rhoB(i) = rhoSOR(A, omega(i));
 end
 
 plot(omega,rhoB)
